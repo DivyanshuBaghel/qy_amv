@@ -5,25 +5,25 @@ function Slider() {
   return (
        <>
         <div id="carouselExampleIndicators" className="carousel slide">
-          <div className="carousel-indicators container">
+          <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div className="container carousel-inner">
+          <div className="carousel-inner">
             <div className="carousel-item active">
             <div className="wrapper">  
-              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/XCjbU13UaBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/XCjbU13UaBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
             </div>
             </div>
             <div className="carousel-item">
             <div className='wrapper'>
-              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/g7Ih8j0jwqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/g7Ih8j0jwqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             </div>
             <div className="carousel-item">
             <div className='wrapper'>  
-              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/h-0mncOcGcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/h-0mncOcGcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
             </div>
             </div>
           </div>
