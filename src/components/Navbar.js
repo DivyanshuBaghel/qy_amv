@@ -4,7 +4,7 @@ function Navbar() {
   return (
         <nav className="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">Qy_AMV</Link>
+                <div style={{display:"flex"}}><Link className="navbar-brand d-flex" to="/"><h1 className='text-primary d-flex'>Qy</h1>_AMV</Link></div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
