@@ -6,7 +6,7 @@ function Slider() {
        <>
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-inner container">
-            <div className="carousel-item container active">
+            <div className="carousel-item active">
             <div className="wrapper">  
               <iframe className="d-block w-100 " src="https://www.youtube.com/embed/XCjbU13UaBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
             </div>
