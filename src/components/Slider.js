@@ -1,27 +1,36 @@
-import React from 'react'
+import React, { Component } from 'react'
+import SlideItem from './SlideItem';
+import src from "./Source.json";
 
 
-function Slider() {
-  return (
-       <>
+export default class Slider extends Component {
+      src = src
+      constructor(){
+        super();
+        this.state={
+          data: this.src.source
+        }
+      }
+      /*componentDidMount() {
+      fetch(src)
+        .then(response => response.json())
+        .then(data => {this.setState({ data })})
+        .catch(error => {
+          // Handle any errors
+          console.log(error)
+        });
+        }*/
+  render() {
+
+    return (
+      <>
         <div id="carouselExampleIndicators" className="carousel slide">
-          <div className="carousel-inner container">
-            <div className="carousel-item active">
-            <div className="wrapper">  
-              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/XCjbU13UaBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
-            </div>
-            </div>
-            <div className="carousel-item">
-            <div className='wrapper'>
-              <iframe className="d-block w-100 " src="https://www.youtube.com/embed/g7Ih8j0jwqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            </div>
-            </div>
-            <div className="carousel-item">
-            <div className='wrapper'>  
-              <iframe className="d-block w-100" src="https://www.youtube.com/embed/h-0mncOcGcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
-            </div>
-            </div>
+         <div className="carousel-inner container"> 
+            {this.state.data.map((element)=>{
+              return <SlideItem title={element.title} vSrc={element.vSrc} key={element.id} id={element.id} ac={element.ac}/>
+              })}
           </div>
+    
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
@@ -32,8 +41,6 @@ function Slider() {
           </button>
         </div>
        </>
-    
-  )
+    )
+  }
 }
-
-export default Slider
